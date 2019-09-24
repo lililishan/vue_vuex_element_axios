@@ -1,0 +1,58 @@
+/*新建值班*/
+.addDuty-wrap {
+  .relative {
+    position: relative;
+  }
+  .newModel {
+    margin: 40px 60px 0; 
+    border: 1px solid #ccc;
+    border-bottom: 0;
+    .mo_cont {
+      float:left;
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      border-bottom: 1px solid #ccc;
+      box-sizing: border-box;
+      .mo_cont_left, 
+      .mo_cont_right {
+        width: 50%;
+        float:left;
+        .in_cont_left,
+        .in_cont_right {
+          padding: 0 10px;
+          height: 50px;
+          // display: inline-block;
+          float:left;
+        }
+        .in_cont_left {
+          width: 20%;
+        }
+        .in_cont_right {
+          width: 80%;
+          &.relative {
+            .iconfont.iconicon-test {
+              position: absolute;
+              right: 15px;
+              z-index: 1;
+              font-size: 20px;
+              cursor: pointer;
+              color: #bfbdbd;
+            }
+          }
+          
+        }
+      }
+      .mo_cont_left,
+      .in_cont_left,
+      .mo_cont_right,
+      .in_cont_right {
+        box-sizing: border-box;
+      }
+      .mo_cont_left,
+      .in_cont_left {
+        border-right: 1px solid #ccc;
+      }
+    }
+  }
+}
